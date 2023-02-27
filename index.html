@@ -8,8 +8,10 @@
 </head>
 <body>
   <h1>Web Design 1 Reference Site</h1>
-  <section>
-    <h2>1. Naming convention for filenames, paths and folders</h2>
+
+<!--1. Naming convention for all filenames, paths and folders-->
+  <section id="naming-convention">
+    <h2>Naming convention for filenames, paths and folders</h2>
     <p>Filenames, paths and folders must be named using only lowercase letters, no spaces, and no special characters (only letters, numbers and dashes).</p>
     <p>Good examples:</p>
     <ul>
@@ -18,8 +20,10 @@
       <li>main.css</li>
     </ul>
   </section>
-  <section>
-  <h2>2. Best Practices for Git Commit Messages</h2>
+
+<!--2. Best Practices for Git Commit Messages-->
+  <section id="commit-messages">
+  <h2>Best Practices for Git Commit Messages</h2>
   <p>Commit message best practices:</p>
     <ul>
       <li>Minimum 3 words & 10 characters</li>
@@ -29,9 +33,11 @@
       <li>Pretend every commit starts with the phrase: “This commit will…”</li>
     </ul>
   </section>
-  <section>
-    <h2>Commonly used HMTL elements</h2>
-    <p>Headings</p>
+
+<!--3. Commonly used HTML tags/elements-->
+  <section id="html-elements">
+    <h2>Commonly used HMTL tags/elements</h2>
+    <h3>Headings</h3>
     <p>The heading tags are used to mark headings according to their importance. The h1 tag stands for the most important heading of the web page and the h6 stands for the least important and smallest one.</p>
       <ol>
         <li><h1>H1</h1></li>
@@ -42,10 +48,10 @@
         <li><h6>H6</h6></li>
       </ol>
 
-    <p>Paragraph Tag</p>
+    <h3>Paragraph Tag</h3>
     <p>Defines a paragraph of text. It is a block-level element and always starts on a new line. Before and after each paragraph,browsers add margin automatically.</p>
-   
-    <p>Unordered List</p>
+
+    <h3>Unordered List</h3>
     <p>Use unordered lists for lists of items that can appear in any order, for example, a shopping list</p>
     <ul>
       <li>cheese</li>
@@ -53,7 +59,7 @@
       <li>milk</li>
     </ul>
 
-    <p>Ordered Lists</p>
+    <h3>Ordered Lists</h3>
     <p>Use OL tags for lists that follow a specific order, for example, the chronological steps of a recipe</p>
       <ol>
         <li>Step one</li>
@@ -61,21 +67,97 @@
         <li>Step three</li>
       </ol>
 
-      <p>Description List</p>
+      <h3>Description List</h3>
       <p>A description list includes a term, and the corresponding description that accompanies it. For example, a dictionary term, and it's definition would be marked up using a description list</p>
-  
-    a
-    img
+      
+      <h3>anchor tag</h3>
+      <p>Anchor tags create a clickable link. The opening tag tells where the link should start and the closing tag indicates where the link ends. To create a hyperlink, you should use the anchor (a) tag and href attribute, the value of which is the URL, or location, where the link is pointing to. Always include an aria-label that provides a description of where the link goes to, for a better user experience screen reader users.</p>
+      <a href="#" aria-label="">Click Here</a>
+    
+      <h3>image tag</h3>
+      <p>Images in websites are not embedded in the website, but linked to by the HTML document. Images need two attributes to specify extra details about the image: the location of the image and the alternative content.</p>
+      <img src="images/orange-tulips.jpg" alt=""/>
+
     figure (img & figcaption)
     q
     blockquote
     cite
-    em
+    ems
     strong
     b
     i
     small
   </section>
-  <section></section>
+
+<!--4. Structuring Content-->
+  <section id="structuring-content">
+    <h2>Structuring Content</h2>
+
+    <h3>header</h3>
+    <header>
+      <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc...</p>
+      <p>All content for the header goes in between the opening and closing  header tags</p>
+    </header>
+
+    <footer>
+      <h3>footer</h3>
+      <p>Many webpages end their pages with a footer at the bottom. This often includes lists of links, copyright information, extra information about the company, terms and services.</p>
+      <p>All content for the footer goes in between the opening and closing  footer tags</p>
+    </footer>
+
+    <main>
+      <h3>main</h3>
+      <p>The main element wraps around the main content of the page. It’s only used once per page and it tells the browser that this is where the main content is.</p>
+    </main>
+    
+    <section>
+      <h3>section</h3>
+      <p>Section is used to wrap around related pieces of content. Usually each section has its own heading.</p>
+    </section>
+    
+    <article>
+      <h3>article</h3>
+      <p>The article element represents a self- contained composition in a web page, which is intended to be independently distributable or reusable. Examples include blog post, product card, interactive widget, etc...</p>
+    </article>
+
+    <h3>nav</h3>
+    <p>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</p>
+    <p>Example:</p>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </section>
+
+<!--5. Linking to an element on the same page-->
+  <section>
+    <h2>Linking to an element on the same page</h2>
+  </section>
+
+  
+<!--6. Comments-->
+<section id="comments">
+  <h2>Comments</h2>
+</section>
+
+<!--7. Landmark Roles-->
+<section id="landmark-roles">
+  <h2>Landmark Roles</h2>
+</section>
+
+<!--8. Aria-label-->
+<section id="aria-label">
+  <h2>Aria-label</h2>
+</section>
+
+<!--9. Skip Links-->
+<section id="skip-links">
+  <h2>Skip-links</h2>
+</section>
+
 </body>
 </html>

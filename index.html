@@ -5,24 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kristen Reference Website</title>
+
+  <!-- google font EXAMPLE-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  <h1>Web Design 1 Reference Site</h1>
+
+  <!-- header tag EXAMPLE-->
+  <header role="banner">
+
+      <!-- skip link EXAMPLE-->
+        <ul>
+          <li><a href="#nav"></a></li>
+          <li><a href="#main"></a></li>
+        </ul>
+
+    <h1>Web Design 1 Reference Site</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<!-- main tag EXAMPLE - see closing tag on line 227 before footer-->
+<main role="main">
 
 <!--1. Naming convention for all filenames, paths and folders-->
-  <section id="naming-convention">
     <h2>Naming convention for filenames, paths and folders</h2>
     <p>Filenames, paths and folders must be named using only lowercase letters, no spaces, and no special characters (only letters, numbers and dashes).</p>
-    <p>Good examples:</p>
-    <ul>
-      <li>reference-website</li>
-      <li>double-layer-chocolate-cake.jpg</li>
-      <li>main.css</li>
-    </ul>
-  </section>
+    <p>Good examples: reference-website, 
+      double-layer-chocolate-cake.jpg, 
+      main.css</p>
 
 <!--2. Best Practices for Git Commit Messages-->
-  <section id="commit-messages">
   <h2>Best Practices for Git Commit Messages</h2>
   <p>Commit message best practices:</p>
     <ul>
@@ -32,7 +54,6 @@
       <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
       <li>Pretend every commit starts with the phrase: “This commit will…”</li>
     </ul>
-  </section>
 
 <!--3. Commonly used HTML tags/elements-->
   <section id="html-elements">
@@ -40,6 +61,7 @@
     <h3>Headings</h3>
     <p>The heading tags are used to mark headings according to their importance. The h1 tag stands for the most important heading of the web page and the h6 stands for the least important and smallest one.</p>
       <ol>
+        <!-- h1 - h6 EXAMPLE-->
         <li><h1>H1</h1></li>
         <li><h2>H2</h2></li>
         <li><h3>H3</h3></li>
@@ -49,10 +71,12 @@
       </ol>
 
     <h3>Paragraph Tag</h3>
+    <!-- p tag EXAMPLE-->
     <p>Defines a paragraph of text. It is a block-level element and always starts on a new line. Before and after each paragraph,browsers add margin automatically.</p>
 
     <h3>Unordered List</h3>
     <p>Use unordered lists for lists of items that can appear in any order, for example, a shopping list</p>
+    <!-- ul tag EXAMPLE-->
     <ul>
       <li>cheese</li>
       <li>apples</li>
@@ -61,6 +85,7 @@
 
     <h3>Ordered Lists</h3>
     <p>Use OL tags for lists that follow a specific order, for example, the chronological steps of a recipe</p>
+    <!-- ol tag EXAMPLE-->
       <ol>
         <li>Step one</li>
         <li>Step two</li>
@@ -69,61 +94,112 @@
 
       <h3>Description List</h3>
       <p>A description list includes a term, and the corresponding description that accompanies it. For example, a dictionary term, and it's definition would be marked up using a description list</p>
+      <!-- dl tag EXAMPLE-->
+      <dl>
+        <dt>Noun</dt> <dd>person, place or thing</dd>
+        <dt>Verb</dt> <dd>describes an action</dd>
+      </dl>  
       
       <h3>anchor tag</h3>
       <p>Anchor tags create a clickable link. The opening tag tells where the link should start and the closing tag indicates where the link ends. To create a hyperlink, you should use the anchor (a) tag and href attribute, the value of which is the URL, or location, where the link is pointing to. Always include an aria-label that provides a description of where the link goes to, for a better user experience screen reader users.</p>
+      <!-- a tag EXAMPLE-->
       <a href="#" aria-label="">Click Here</a>
     
       <h3>image tag</h3>
-      <p>Images in websites are not embedded in the website, but linked to by the HTML document. Images need two attributes to specify extra details about the image: the location of the image and the alternative content.</p>
-      <img src="images/orange-tulips.jpg" alt=""/>
+      <p>Images in websites are not embedded in the website, but linked to by the HTML document. Images need two attributes to specify extra details about the image: the location of the image and the alternative content. src is a path to the image file. alt describes the image if it cannot be seen</p>
+      <!-- img tag EXAMPLE-->
+      <img src="images/orange-tulips.jpg" alt="close up of a orange and yellow tulip"/>
 
-    figure (img & figcaption)
-    q
-    blockquote
-    cite
-    ems
-    strong
-    b
-    i
-    small
+      <h3>figure, figcaption</h3>
+      <p>figure tags contain self-contained content, like illustrations and diagrams, with a caption. An image tag linking to the content is nested within a figure tag to display the item. The figure caption tag is also nested within the figure tag. Figure caption cannot stand on it's own.</p>
+      <!-- figure tag EXAMPLE-->
+      <figure>
+        <img src="images/robot.jpg" alt="sketch of a robot with a glass astronaut helmet, a tin body, and a triangular tread for feet">
+        <!-- figcaption tag EXAMPLE-->
+        <figcaption>A jaunty robot sketch</figcaption>
+      </figure>
+      
+      <h3>q</h3>
+      <p>the q tag is used for a short, inline quotation</p>
+      <!-- q tag EXAMPLE-->
+      <p>The weather was finally starting to become warm, the students all said <q>Welcome spring</q> in unison.</p>
+    
+      <h3>blockquote</h3>
+      <p>blockquote tag is used for stand alone quotations</p>
+      <!-- blockquote tag EXAMPLE-->
+      <blockquote>This is my reference website!</blockquote>
+
+      <h3>cite</h3>
+      <p>The cite tag references an author, or source for a quote.</p>
+      <!-- cite tag EXAMPLE-->
+      <cite>Kristen Scheel</cite>
+      
+      <h3>em</h3>
+      <p>A string of emphasized, slightly more important text. Screen readers will read this text in a different voice.</p>
+      <!-- em EXAMPLE-->
+      <p>Assignments are typically due at the beginning of each week. The reference website is due <em>Monday, April 3</em></p>
+      
+      <h3>strong</h3>
+      <p>a strong tag adds lots of emphasis to the content inside. screenreaders will read this content is a different voice</p>
+      <!-- strong EXAMPLE-->
+      <p>The penalty for unpaid parking is a parking ticket. After three violations your vehicle <strong>will be towed</strong></p>
+
+      <h3>b</h3>
+      <p>b defines a keyword, like a product name in a review, or a lead sentence in a paragraph. The b tag is used to markup text as bold without conveying any extra importance. It will not be read in a different voice by screenreaders.</p>
+      <!-- b EXAMPLE-->
+      <p>This is a paragraph <b>This section of text is bold, but it is not more important.</b></p>
+
+      <h3>i</h3>
+      <p>The i tag sets the content in italics. This can be used when defining a technical term, listing a book title, or setting text that needs to be emphasized subtly (sarcasm for example)</p>
+      <!-- i EXAMPLE-->
+      <p>I read the latest review in today's <i>New York Times</i></p>
+
+      <h3>small</h3>
+      <p>the small tag is used for fine print, for example, for copyright info in the footer</p>
+      <!-- small EXAMPLE-->
+      <p><small>copyright 2023</small></p>
+
   </section>
 
 <!--4. Structuring Content-->
   <section id="structuring-content">
+
     <h2>Structuring Content</h2>
 
-    <h3>header</h3>
+    <!-- header EXAMPLE: also see top of this document, after opening <body> tag -->
     <header>
-      <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc...</p>
-      <p>All content for the header goes in between the opening and closing  header tags</p>
+      <h3>header</h3>
+      <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc. All content for the header goes in between the opening and closing  header tags</p>
     </header>
 
-    <footer>
-      <h3>footer</h3>
-      <p>Many webpages end their pages with a footer at the bottom. This often includes lists of links, copyright information, extra information about the company, terms and services.</p>
-      <p>All content for the footer goes in between the opening and closing  footer tags</p>
-    </footer>
+   <h3>main</h3>
+   <!-- main EXAMPLE: see right under header section in this document. Syntax:
+    <main role="main"> </main>
+    -->
+    <p>The main element wraps around the main content of the page. It is only used once per page and it tells the browser that this is where the main content is.</p>
 
-    <main>
-      <h3>main</h3>
-      <p>The main element wraps around the main content of the page. It’s only used once per page and it tells the browser that this is where the main content is.</p>
-    </main>
+    <h3>footer</h3>
+    <!-- footer EXAMPLE: see end of this document. Syntax: 
+    <footer role="contentinfo"> </footer>-->
+    <p>Many webpages end their pages with a footer at the bottom. This often includes lists of links, copyright information, extra information about the company, terms and services.</p>
+    <p>All content for the footer goes in between the opening and closing  footer tags</p>
     
-    <section>
       <h3>section</h3>
+      <!-- section EXAMPLE see line 59, (3. Commonly used HTML tags/elements) - this group of related  content has been grouped (nested) within an opening and closing section tag, with a section id allowing the developer to style the section as a whole.)
+      Syntax: <section></section>
+      -->
       <p>Section is used to wrap around related pieces of content. Usually each section has its own heading.</p>
-    </section>
-    
+   
+     <!-- article EXAMPLE -->
     <article>
       <h3>article</h3>
-      <p>The article element represents a self- contained composition in a web page, which is intended to be independently distributable or reusable. Examples include blog post, product card, interactive widget, etc...</p>
+      <p>The article element represents a self- contained composition in a web page, which is intended to be independently distributable or reusable. An article could be removed from the website, and would still make senese on it's own. Examples include blog post, product card, interactive widget, etc...</p>
     </article>
 
     <h3>nav</h3>
     <p>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</p>
-    <p>Example:</p>
-    <nav>
+     <!-- nav EXAMPLE (also find nav example in header at top of this document-->
+    <nav role="navigation">
       <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Our Work</a></li>
@@ -134,30 +210,192 @@
   </section>
 
 <!--5. Linking to an element on the same page-->
-  <section>
     <h2>Linking to an element on the same page</h2>
-  </section>
-
+    <p>using "#+id" in the href creates a link that takes the user to an element with that id on the same page</p>
+    <!-- linking on same page EXAMPLE-->
+    <a href="#html-elements">go to HTML elements</a>
   
 <!--6. Comments-->
-<section id="comments">
   <h2>Comments</h2>
-</section>
+  <!-- this is an EXAMPLE of a comment, with the correct syntax-->
+  <p>comments are not displayed in the browser, but they can help document your HTML source code, to make it easier for other people to understand your code to pick up where you left off, or to leave notes for yourself to annotate your work and make sure everything is clear and understandable.</p>
 
 <!--7. Landmark Roles-->
-<section id="landmark-roles">
   <h2>Landmark Roles</h2>
-</section>
+  <p>landmark roles are a way of defining elements to help those using screen readers jump directly to specific sections within a website</p>
+  <!-- landmark role EXAMPLES:
+    <header role="banner"></header>
+    <nav role="navigation"></nav>
+    <main role="main"></main>
+    <aside role="complimentary"></aside>
+    <footer role="contentinfo"></footer>
+  -->
 
 <!--8. Aria-label-->
-<section id="aria-label">
   <h2>Aria-label</h2>
-</section>
+  <p>adding aria-label attributes provides the user with a non-visual label that will only be announced by screen readers. This label provides the screen reader user with a description of where the link will click through to.</p>
+  <!-- aria label EXAMPLE-->
+  <a href="https://www.theweathernetwork.com/ca" target="_blank" aria-label="weather network">Weather Info</a>
 
 <!--9. Skip Links-->
-<section id="skip-links">
   <h2>Skip-links</h2>
-</section>
+  <p>Skip links are placed at the top of your page, and offer users a way to jump to specific areas of the page.</p>
+  <!-- skip links EXAMPLE, see line 21 of this document-->
 
-</body>
+<!--10. Font Properties-->
+<h2>Font properties</h2>
+<p>When styling fonts in CSS there are a number of properties that we can use to control the style.</p>
+
+<h3>font-family</h3>
+<p>font family is where we specify the name of the font (i.e. Helvetica, or, sans-serif)</p>
+
+<h3>font-size</h3>
+<p>The font-size property is used to set the size of the font. It is a single number with a unit (rem, em, or px - but rem is the best choice, so that the site can be responsive, and respect users desired settings)</p>
+
+<h3>font-weight</h3>
+<p>font weight sets the thickness (or thinness) of the characters, for example, bold, normal, 500, 300, 700.</p>
+
+<h3>font-style</h3>
+<p>Specifies the font style, for example, italic or normal.</p>
+
+<h3>line-height</h3>
+<p>this property is used to adjust the line height (the space between lines of text). It should be a single number, a multiplier that multiplies the font size (ex. 1.5). Does not take a unit!</p>
+
+<!-- font properties EXAMPLE-->
+<!-- IMPORTANT: styles should NOT be written inside HTML document, only done here for demostration purposes. Always add CSS to a separate document linked to HTML-->
+<style> 
+  h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+  }
+</style>
+
+<h3>font shorthand</h3>
+<p>To shorten the code, it is possible to specify more than one individual font property in one declaration</p>
+<!-- font shorthand EXAMPLE-->
+<!-- IMPORTANT: styles should NOT be written inside HTML document, only done here for demostration purposes. Always add CSS to a separate document linked to HTML-->
+<style>
+  h3 {
+    font: bold, 1.5em, Arial;
+  }
+</style>
+
+<!--11. Text Decorations-->
+<h3>Text decorations</h3>
+<p>Text decorations are changes that can be added to text in CSS, for example, text transform, text-align, text-indent, text-shadow, text-decoration. Examples below.</p>
+
+<h3>text-transform</h3>
+<p>text-transform is used in CSS to change capitalizations, such as uppercase, lowercase, capitalize. It is preferable to use text-transform to make copy all caps, instead of writing it in all caps in HTML for accessibility</p>
+
+<h3>text-decoration</h3>
+<p>Text decoration specifies the changs to text, i.e. underline, line-through, overline, none. Only links should be underlined on a website.</p>
+
+<h3>text-align</h3>
+<p>Text align specifies the horizontal alignment of text inside an element. For example, left, center, right, justify.</p>
+
+<h3>text-indent</h3>
+<p>indents the first line of text, similar to printed materials. for example: left, center, right, justify.</p>
+
+<h3>text-shadow</h3>
+<p>adds a shadow to the text. Specified in this way: text-shadow: horizontal-offset vertical-offset blur-radius color. ie. text-shadow: 2px 2px #ff0000; Use sparingly!</p>
+
+<!-- text decorations EXAMPLE-->
+<!-- IMPORTANT: styles should NOT be written inside HTML document, only done here for demostration purposes. Always add CSS to a separate document linked to HTML-->
+<p id="decorations">text decroations test: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+<style>
+  #decorations {
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-align: center;
+    text-indent: left;
+    text-shadow: 2px 2px #ff0000;
+  }
+</style>
+
+<!--12. Link States-->
+<h2>Styling Links</h2>
+<p>Styling links in websites is no different from styling other elements, but, they must be styled directly, and don't inherit certain properties from their parent elements. Links have many different states that we can style when a user interacts. It is important that these link states are styled in the proper direction (link, visited, hover, focus, active). Links can be styled with any CSS property (color, font-family, background, etc).</p>
+
+<h3>link</h3>
+<p>:link is used to style the default link state. Be careful when removing underlining from a link! Make sure there is still enough contrast to understand that the text contains a link.</p>
+
+<h3>visited link</h3>
+<p>:visited is used for styling the link after it has been clicked on (visited) by the user</p>
+
+<h3>hover</h3>
+<p>:hover changes the styling for the link when the user hovers over it with the mouse</p>
+
+<h3>focus</h3>
+<p>:focus styles the link when the keyboard has tab-focused on it</p>
+
+<h3>active</h3>
+<p>:active styles the link when the mouse button is pressed down on it</p>
+
+<!-- link styling EXAMPLES-->
+<!-- IMPORTANT: styles should NOT be written inside HTML document, only done here for demostration purposes. Always add CSS to a separate document linked to HTML-->
+  <a class="one" href="https://www.nytimes.com/" target="_blank">regular link</a>
+<style>
+  .one:link {
+    text-decoration: underline;
+    color: pink;
+    font-family: Roboto;
+  }
+  .one:visited {
+    color: purple;
+  }
+  .one:hover {
+    color: green;
+  }
+  .one:focus {
+    color: red;
+  }
+  .one:active {
+    color: orange;
+  }
+</style>
+
+<!--13. Adding a Google Font-->
+<h3>Adding a Google font</h3>
+<p>visit fonts.google.com to select web fonts. when you have your font selected, click on the desired styles (weights, italic etc). The choose link - copy the link provided, and add it to the head of your document, directly under the website title, and above the closing head tag (see line 10 in this document). You can now reference this font-family selected in your CSS. (example of referencing Roboto in link styling section)</p>
+
+<!-- adding a google font EXAMPLE - this is what the link should look like - it should be added at the top of the document, in the <head>:
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+-->
+<!--14. Margin-->
+<h3>Margin</h3>
+<p>outside the box is the margin, a transparent layer pushing other boxes away. Margin is the space around an element that separates it from other elements. We can specifiy margin with individual properties (i.e. margin-top, margin-left etc, but it is often easier to use the shorthand version. Start at the top and make your way clockwise around the box (i.e. margin: (30px 40px 30px 40px); </p>
+
+<!--15. Padding-->
+<h2>Padding</h2>
+<p>padding sits around the outside of the content, pushing the edge of the box away from the content. Padding is often used to give the content some breathing room. We can specifiy padding with individual properties (i.e. padding-top, padding-left etc, but it is often easier to use the shorthand version. Start at the top and make your way clockwise around the box (i.e. padding: (30px 40px 30px 40px); In the example blue, the blue box helps to demonstrate where the padding is - outside the content, but up to the edge of the border.</p>
+
+<!-- margin & padding EXAMPLES-->
+<!-- IMPORTANT: styles should NOT be written inside HTML document, only done here for demostration purposes. Always add CSS to a separate document linked to HTML-->
+<style>
+  img {
+    background-color: blue;
+    margin: 60px 20px 60px 20px;
+    padding: 100px 50px 100px 50px;
+  }
+</style>
+
+      <!-- main section closing tag-->
+      </main>
+
+    <!-- footer EXAMPLE-->
+    <footer role="contentinfo">
+      <p>This is the footer, copyright and contact information goes here</p>
+    </footer>
+
+<!-- body closing tag - all website content should be within the body-->
+  </body>
+
+  <!-- HTML closing tag-->
 </html>
